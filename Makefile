@@ -1,14 +1,8 @@
-#
-# makefile for elfss
-#
-# Copyleft (C) Li hsilin
-#  
-
-TG = elfss
-all: $(TG)
-readph: elfss.c
+TARGET = elfss
+all: $(TARGET)
+$(TARGET): elfss.o
 	$(CC) -o $@ $^
 clean:
-	$(RM) $(TG)
+	$(RM) *.o $(TARGET)
 
 .PHONY: all clean

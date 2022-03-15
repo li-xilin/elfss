@@ -1,7 +1,6 @@
 /*
- * elfss.c 
  *
- * Copyleft (C) Li hsilin
+ * Copyright (C) 2019 - 2022 Li xilin <lixilin@mail.ru>
  * 
  */
 #include <stdio.h>
@@ -149,7 +148,7 @@ static int       read_eh_class(FILE* f);
 static void      usage(void);
 
 static void usage(void) {
-	puts("Usage: elfss <ELF_file>");
+	puts("Usage: elfinfo <ELF_file>");
 }
 
 static const char* phdr_type_name(int type) {
